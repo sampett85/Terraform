@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIAWGCDXVKXBKNVQTNT"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 
@@ -31,7 +31,7 @@ resource "aws_security_group" "test_sg" {
 
 resource "aws_key_pair" "test_kp" {
   key_name   = "test_kp"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKhey5MLSePEQFD+6WgyYGoUHRErh5wREgZ33N4tDFf6WFVa9avU2vhXcmmXipF3kEsdjyrlPD0eNdR4sRdIepiyGzw25EHMEcvI9/6+wt7KRDVuMFKNwcAaB7X4mJTxRaqR6G4XHj2yRvreEgytzw9wqTBn6c8o0k2Xpb0GVQeyCddVkR3mxftKv7AIgiORK8/H/tEEjmiAPhEZFRk9J08DhgkCLXSUHsebWl75F6AYytUpUKLLhffZgRSiaJxqgbWYuypN5U2hwWnVetIx+ThYzwL0xa4NMt8BvIeYxcqRSMMbnrgZe/ddbN5992qyXlUBGeDLs5ZCZ4HlxjkMtr ayazpatel@Ayazs-Mac-mini-1.attlocal.net"
+  public_key = "ssh-rsa Khey5MLSePEQFD+6WgyYGoUHRErh5wREgZ33N4tDFf6WFVa9avU2vhXcmmXipF3kEsdjyrlPD0eNdR4sRdIepiyGzw25EHMEcvI9/6+wt7KRDVuMFKNwcAaB7X4mJTxRaqR6G4XHj2yRvreEgytzw9wqTBn6c8o0k2Xpb0GVQeyCddVkR3mxftKv7AIgiORK8/H/tEEjmiAPhEZFRk9J08DhgkCLXSUHsebWl75F6AYytUpUKLLhffZgRSiaJxqgbWYuypN5U2hwWnVetIx+ThYzwL0xa4NMt8BvIeYxcqRSMMbnrgZe/ddbN5992qyXlUBGeDLs5ZCZ4HlxjkMtr ayazpatel@Ayazs-Mac-mini-1.attlocal.net"
 }
 
 resource "aws_instance" "ec2_instance" {
